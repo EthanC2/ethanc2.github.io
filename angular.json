@@ -21,7 +21,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "progress": false,
-            "outputPath": "dist",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -129,6 +129,9 @@
               "vendorChunk": false
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
