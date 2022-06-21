@@ -1,0 +1,24 @@
+:root {
+    --font-title:, 'Comic Code', Helvetica, sans-serif;
+    --font-body: 'Open Sans', Helvetica, sans-serif;
+
+    --color-bg-primary: hsl(0, 0%, 20%);
+    --color-bg-light: hsl(0, 0%, 40%);
+    --color-bg-dark: hsl(0, 0%, 10%);
+
+    --color-text-primary: hsl(0, 0%, 90%);
+    --color-text-secondary: hsl(0, 0%, 70%);
+
+    --color-accent-light:hsl(207, 44%, 49%);
+    --color-accent-dark: hsl(207, 44%, 30%);
+}
+
+@font-face {
+    font-family: 'Comic Code';
+    src: url('assets/fonts/comic-code.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Amargo';
+    src: url('assets/fonts/amagro.ttf');
+}
