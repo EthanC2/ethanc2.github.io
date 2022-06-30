@@ -19,9 +19,9 @@ export class AppComponent implements OnInit {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
     ).subscribe(() => {
-      var rt = this.getChild(this.activatedRoute);
-      rt.data.subscribe(data => {
-        this.titleService.setTitle(data.title);
+      var route = this.getChild(this.activatedRoute);
+      route.data.subscribe(data => {
+        this.titleService.setTitle('TRS | ' + data.title);
       });
     });
   }
